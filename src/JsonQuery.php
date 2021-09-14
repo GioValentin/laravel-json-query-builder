@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder;
+namespace GioValentin\JsonQueryBuilder;
 
-use Asseco\JsonQueryBuilder\Config\ModelConfig;
-use Asseco\JsonQueryBuilder\Config\RequestParametersConfig;
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
-use Asseco\JsonQueryBuilder\RequestParameters\AbstractParameter;
+use GioValentin\JsonQueryBuilder\Config\ModelConfig;
+use GioValentin\JsonQueryBuilder\Config\RequestParametersConfig;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\RequestParameters\AbstractParameter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 

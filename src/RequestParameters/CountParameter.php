@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\RequestParameters;
+namespace GioValentin\JsonQueryBuilder\RequestParameters;
 
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
 use Illuminate\Support\Facades\DB;
 
 class CountParameter extends AbstractParameter
@@ -27,6 +27,6 @@ class CountParameter extends AbstractParameter
 
     protected function appendQuery(): void
     {
-        $this->builder->addSelect(DB::raw('count(*) as count'));
+        $this->builder->addSelect(DB::connection('mongodb')->raw('count(*) as count'));
     }
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Config;
+namespace GioValentin\JsonQueryBuilder\Config;
 
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
 
 abstract class SearchConfig
 {
@@ -17,7 +17,7 @@ abstract class SearchConfig
      */
     public function __construct()
     {
-        $this->config = config('asseco-json-query-builder');
+        $this->config = config('GioValentin-json-query-builder');
         $this->register();
     }
 

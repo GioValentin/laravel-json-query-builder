@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Config;
+namespace GioValentin\JsonQueryBuilder\Config;
 
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
-use Asseco\JsonQueryBuilder\SearchCallbacks\AbstractCallback;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\AbstractCallback;
 
 class OperatorsConfig extends SearchConfig
 {

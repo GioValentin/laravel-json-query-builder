@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests\Unit\Config;
+namespace GioValentin\JsonQueryBuilder\Tests\Unit\Config;
 
-use Asseco\JsonQueryBuilder\Config\OperatorsConfig;
-use Asseco\JsonQueryBuilder\SearchCallbacks\Equals;
-use Asseco\JsonQueryBuilder\Tests\TestCase;
+use GioValentin\JsonQueryBuilder\Config\OperatorsConfig;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\Equals;
+use GioValentin\JsonQueryBuilder\Tests\TestCase;
 use Exception;
 
 class OperatorsConfigTest extends TestCase
@@ -24,7 +24,7 @@ class OperatorsConfigTest extends TestCase
     {
         $this->expectException(Exception::class);
 
-        config(['asseco-json-query-builder' => []]);
+        config(['GioValentin-json-query-builder' => []]);
 
         new OperatorsConfig();
     }

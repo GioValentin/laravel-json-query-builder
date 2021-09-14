@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Config;
+namespace GioValentin\JsonQueryBuilder\Config;
 
 use Exception;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
@@ -27,12 +27,12 @@ class ModelConfig
 
     public function hasConfig(): bool
     {
-        return array_key_exists(get_class($this->model), config('asseco-json-query-builder.model_options'));
+        return array_key_exists(get_class($this->model), config('GioValentin-json-query-builder.model_options'));
     }
 
     protected function getConfig(): array
     {
-        return config('asseco-json-query-builder.model_options.' . get_class($this->model));
+        return config('GioValentin-json-query-builder.model_options.' . get_class($this->model));
     }
 
     public function getReturns(): array
@@ -128,7 +128,7 @@ class ModelConfig
 
         try {
             foreach ($columns as $column) {
-                $modelColumns[$column] = DB::getSchemaBuilder()->getColumnType($table, $column);
+                $modelColumns[$column] = DB::connection('mongodb')->getSchemaBuilder()->getColumnType($table, $column);
             }
         } catch (Exception $e) {
             // leave model columns as an empty array and cache it.
@@ -145,7 +145,7 @@ class ModelConfig
      */
     protected function registerEnumTypeForDoctrine(): void
     {
-        $connection = DB::connection();
+        $connection = DB::connection('mongodb');
 
         if (!class_exists('Doctrine\DBAL\Driver\AbstractSQLiteDriver')) {
             return;

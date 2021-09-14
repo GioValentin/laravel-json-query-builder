@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Config;
+namespace GioValentin\JsonQueryBuilder\Config;
 
 class RequestParametersConfig extends SearchConfig
 {

@@ -1,24 +1,24 @@
 <?php
 
-use Asseco\JsonQueryBuilder\RequestParameters\CountParameter;
-use Asseco\JsonQueryBuilder\RequestParameters\GroupByParameter;
-use Asseco\JsonQueryBuilder\RequestParameters\LimitParameter;
-use Asseco\JsonQueryBuilder\RequestParameters\OffsetParameter;
-use Asseco\JsonQueryBuilder\RequestParameters\OrderByParameter;
-use Asseco\JsonQueryBuilder\RequestParameters\RelationsParameter;
-use Asseco\JsonQueryBuilder\RequestParameters\ReturnsParameter;
-use Asseco\JsonQueryBuilder\RequestParameters\SearchParameter;
-use Asseco\JsonQueryBuilder\RequestParameters\SoftDeletedParameter;
-use Asseco\JsonQueryBuilder\SearchCallbacks\Between;
-use Asseco\JsonQueryBuilder\SearchCallbacks\Equals;
-use Asseco\JsonQueryBuilder\SearchCallbacks\GreaterThan;
-use Asseco\JsonQueryBuilder\SearchCallbacks\GreaterThanOrEqual;
-use Asseco\JsonQueryBuilder\SearchCallbacks\LessThan;
-use Asseco\JsonQueryBuilder\SearchCallbacks\LessThanOrEqual;
-use Asseco\JsonQueryBuilder\SearchCallbacks\NotBetween;
-use Asseco\JsonQueryBuilder\SearchCallbacks\NotEquals;
-use Asseco\JsonQueryBuilder\Types\BooleanType;
-use Asseco\JsonQueryBuilder\Types\GenericType;
+use GioValentin\JsonQueryBuilder\RequestParameters\CountParameter;
+use GioValentin\JsonQueryBuilder\RequestParameters\GroupByParameter;
+use GioValentin\JsonQueryBuilder\RequestParameters\LimitParameter;
+use GioValentin\JsonQueryBuilder\RequestParameters\OffsetParameter;
+use GioValentin\JsonQueryBuilder\RequestParameters\OrderByParameter;
+use GioValentin\JsonQueryBuilder\RequestParameters\RelationsParameter;
+use GioValentin\JsonQueryBuilder\RequestParameters\ReturnsParameter;
+use GioValentin\JsonQueryBuilder\RequestParameters\SearchParameter;
+use GioValentin\JsonQueryBuilder\RequestParameters\SoftDeletedParameter;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\Between;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\Equals;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\GreaterThan;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\GreaterThanOrEqual;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\LessThan;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\LessThanOrEqual;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\NotBetween;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\NotEquals;
+use GioValentin\JsonQueryBuilder\Types\BooleanType;
+use GioValentin\JsonQueryBuilder\Types\GenericType;
 
 return [
     /**

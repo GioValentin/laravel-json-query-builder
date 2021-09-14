@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\SearchCallbacks;
+namespace GioValentin\JsonQueryBuilder\SearchCallbacks;
 
-use Asseco\JsonQueryBuilder\CategorizedValues;
-use Illuminate\Database\Eloquent\Builder;
+use GioValentin\JsonQueryBuilder\CategorizedValues;
+use Jenssegers\Mongodb\Eloquent\Builder;
 
 class LessThan extends AbstractCallback
 {

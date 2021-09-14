@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests\Unit\Config;
+namespace GioValentin\JsonQueryBuilder\Tests\Unit\Config;
 
-use Asseco\JsonQueryBuilder\Config\TypesConfig;
-use Asseco\JsonQueryBuilder\Tests\TestCase;
-use Asseco\JsonQueryBuilder\Types\BooleanType;
-use Asseco\JsonQueryBuilder\Types\GenericType;
+use GioValentin\JsonQueryBuilder\Config\TypesConfig;
+use GioValentin\JsonQueryBuilder\Tests\TestCase;
+use GioValentin\JsonQueryBuilder\Types\BooleanType;
+use GioValentin\JsonQueryBuilder\Types\GenericType;
 use Exception;
 
 class TypesConfigTest extends TestCase
@@ -25,7 +25,7 @@ class TypesConfigTest extends TestCase
     {
         $this->expectException(Exception::class);
 
-        config(['asseco-json-query-builder' => []]);
+        config(['GioValentin-json-query-builder' => []]);
 
         new TypesConfig();
     }
@@ -53,7 +53,7 @@ class TypesConfigTest extends TestCase
     {
         $this->expectException(Exception::class);
 
-        config(['asseco-json-query-builder.types' => []]);
+        config(['GioValentin-json-query-builder.types' => []]);
 
         $typesConfig = new TypesConfig();
 

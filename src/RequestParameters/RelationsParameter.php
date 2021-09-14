@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\RequestParameters;
+namespace GioValentin\JsonQueryBuilder\RequestParameters;
 
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
-use Asseco\JsonQueryBuilder\JsonQuery;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\JsonQuery;
 use Illuminate\Support\Str;
 
 class RelationsParameter extends AbstractParameter

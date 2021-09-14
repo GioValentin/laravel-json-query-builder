@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests\Unit\Parsers;
+namespace GioValentin\JsonQueryBuilder\Tests\Unit\Parsers;
 
-use Asseco\JsonQueryBuilder\Config\ModelConfig;
-use Asseco\JsonQueryBuilder\JsonQuery;
-use Asseco\JsonQueryBuilder\Tests\TestCase;
-use Asseco\JsonQueryBuilder\Tests\TestModel;
+use GioValentin\JsonQueryBuilder\Config\ModelConfig;
+use GioValentin\JsonQueryBuilder\JsonQuery;
+use GioValentin\JsonQueryBuilder\Tests\TestCase;
+use GioValentin\JsonQueryBuilder\Tests\TestModel;
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests\Unit\Config;
+namespace GioValentin\JsonQueryBuilder\Tests\Unit\Config;
 
-use Asseco\JsonQueryBuilder\Config\ModelConfig;
-use Asseco\JsonQueryBuilder\Tests\TestCase;
+use GioValentin\JsonQueryBuilder\Config\ModelConfig;
+use GioValentin\JsonQueryBuilder\Tests\TestCase;
 use Illuminate\Database\Eloquent\Model;
 use Mockery;
 
@@ -23,7 +23,7 @@ class ModelConfigTest extends TestCase
     /** @test */
     public function model_has_config()
     {
-        config(['asseco-json-query-builder.model_options' => [
+        config(['GioValentin-json-query-builder.model_options' => [
             get_class($this->model) => ['random_config' => '123'],
         ]]);
 
@@ -35,7 +35,7 @@ class ModelConfigTest extends TestCase
     /** @test */
     public function has_returns_config_set()
     {
-        config(['asseco-json-query-builder.model_options' => [
+        config(['GioValentin-json-query-builder.model_options' => [
             get_class($this->model) => ['returns' => '123'],
         ]]);
 
@@ -55,7 +55,7 @@ class ModelConfigTest extends TestCase
     /** @test */
     public function has_order_by_config_set()
     {
-        config(['asseco-json-query-builder.model_options' => [
+        config(['GioValentin-json-query-builder.model_options' => [
             get_class($this->model) => [
                 'order_by' => [
                     'attribute' => 'asc',

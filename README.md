@@ -1,4 +1,4 @@
-<p align="center"><a href="https://see.asseco.com" target="_blank"><img src="https://github.com/asseco-voice/art/blob/main/evil_logo.png" width="500"></a></p>
+<p align="center"><a href="https://see.GioValentin.com" target="_blank"><img src="https://github.com/GioValentin-voice/art/blob/main/evil_logo.png" width="500"></a></p>
 
 # Laravel JSON query builder
 
@@ -10,7 +10,7 @@ the special logic explained below.
 Install the package through composer. It is automatically registered
 as a Laravel service provider.
 
-``composer require asseco-voice/laravel-json-query-builder``
+``composer require GioValentin-voice/laravel-json-query-builder``
 
 ## Usage
 
@@ -533,7 +533,7 @@ Aside from standard query string search, it is possible to provide additional
 package configuration.
 
 Publish the configuration by running 
-`php artisan vendor:publish --provider="Asseco\JsonQueryBuilder\JsonQueryServiceProvider"`.
+`php artisan vendor:publish --provider="GioValentin\JsonQueryBuilder\JsonQueryServiceProvider"`.
 
 All the keys within the configuration file have a detailed explanation above each key.
 
@@ -544,9 +544,9 @@ custom code.
 
 - request parameters are registered under ``request_parameters`` config key. 
 You can extend this functionality by adding your own custom parameter. It 
-needs to extend ``Asseco\JsonQueryBuilder\RequestParameters\AbstractParameter``
+needs to extend ``GioValentin\JsonQueryBuilder\RequestParameters\AbstractParameter``
 in order to work.  
 - operators are registered under ``operators`` config key. Those can be 
-extended by adding a class which extends ``Asseco\JsonQueryBuilder\SearchCallbacks\AbstractCallback``.
+extended by adding a class which extends ``GioValentin\JsonQueryBuilder\SearchCallbacks\AbstractCallback``.
 - types are registered under ``types`` config key. Those can be extended
-by adding a class which extends ``Asseco\JsonQueryBuilder\Types\AbstractType``.
+by adding a class which extends ``GioValentin\JsonQueryBuilder\Types\AbstractType``.

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\RequestParameters;
+namespace GioValentin\JsonQueryBuilder\RequestParameters;
 
-use Asseco\JsonQueryBuilder\Config\ModelConfig;
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
-use Illuminate\Database\Eloquent\Builder;
+use GioValentin\JsonQueryBuilder\Config\ModelConfig;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use Jenssegers\Mongodb\Eloquent\Builder;
 
 abstract class AbstractParameter
 {

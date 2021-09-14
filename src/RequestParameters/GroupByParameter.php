@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\RequestParameters;
+namespace GioValentin\JsonQueryBuilder\RequestParameters;
 
 class GroupByParameter extends AbstractParameter
 {

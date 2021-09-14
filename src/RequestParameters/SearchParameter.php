@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\RequestParameters;
+namespace GioValentin\JsonQueryBuilder\RequestParameters;
 
-use Asseco\JsonQueryBuilder\Config\OperatorsConfig;
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
-use Asseco\JsonQueryBuilder\JsonQuery;
-use Asseco\JsonQueryBuilder\SearchCallbacks\AbstractCallback;
-use Asseco\JsonQueryBuilder\SearchParser;
+use GioValentin\JsonQueryBuilder\Config\OperatorsConfig;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\JsonQuery;
+use GioValentin\JsonQueryBuilder\SearchCallbacks\AbstractCallback;
+use GioValentin\JsonQueryBuilder\SearchParser;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 

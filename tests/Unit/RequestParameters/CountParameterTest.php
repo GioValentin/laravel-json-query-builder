@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests\Unit\RequestParameters;
+namespace GioValentin\JsonQueryBuilder\Tests\Unit\RequestParameters;
 
-use Asseco\JsonQueryBuilder\Config\ModelConfig;
-use Asseco\JsonQueryBuilder\RequestParameters\CountParameter;
-use Asseco\JsonQueryBuilder\Tests\TestCase;
+use GioValentin\JsonQueryBuilder\Config\ModelConfig;
+use GioValentin\JsonQueryBuilder\RequestParameters\CountParameter;
+use GioValentin\JsonQueryBuilder\Tests\TestCase;
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Mockery;

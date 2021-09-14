@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder;
+namespace GioValentin\JsonQueryBuilder;
 
-use Asseco\JsonQueryBuilder\Config\ModelConfig;
-use Asseco\JsonQueryBuilder\Config\OperatorsConfig;
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
-use Asseco\JsonQueryBuilder\Traits\CleansValues;
+use GioValentin\JsonQueryBuilder\Config\ModelConfig;
+use GioValentin\JsonQueryBuilder\Config\OperatorsConfig;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\Traits\CleansValues;
 use Illuminate\Support\Facades\Config;
 
 class SearchParser
@@ -117,7 +117,7 @@ class SearchParser
      */
     protected function checkForForbiddenColumns()
     {
-        $forbiddenKeys = Config::get('asseco-json-query-builder.global_forbidden_columns');
+        $forbiddenKeys = Config::get('GioValentin-json-query-builder.global_forbidden_columns');
         $forbiddenKeys = $this->modelConfig->getForbidden($forbiddenKeys);
 
         if (in_array($this->column, $forbiddenKeys)) {

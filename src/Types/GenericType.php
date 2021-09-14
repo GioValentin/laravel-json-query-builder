@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Types;
+namespace GioValentin\JsonQueryBuilder\Types;
 
 class GenericType extends AbstractType
 {

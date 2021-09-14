@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder;
+namespace GioValentin\JsonQueryBuilder;
 
-use Asseco\JsonQueryBuilder\Config\TypesConfig;
-use Asseco\JsonQueryBuilder\Types\AbstractType;
+use GioValentin\JsonQueryBuilder\Config\TypesConfig;
+use GioValentin\JsonQueryBuilder\Types\AbstractType;
 
 class CategorizedValues
 {

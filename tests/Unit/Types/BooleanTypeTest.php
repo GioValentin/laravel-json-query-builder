@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests\Unit\SearchCallbacks;
+namespace GioValentin\JsonQueryBuilder\Tests\Unit\SearchCallbacks;
 
-use Asseco\JsonQueryBuilder\Tests\TestCase;
-use Asseco\JsonQueryBuilder\Types\BooleanType;
+use GioValentin\JsonQueryBuilder\Tests\TestCase;
+use GioValentin\JsonQueryBuilder\Types\BooleanType;
 use Exception;
 
 class BooleanTypeTest extends TestCase

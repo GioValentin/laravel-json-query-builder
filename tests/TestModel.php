@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests;
+namespace GioValentin\JsonQueryBuilder\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 

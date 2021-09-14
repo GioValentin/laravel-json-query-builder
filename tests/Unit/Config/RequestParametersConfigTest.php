@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests\Unit\Config;
+namespace GioValentin\JsonQueryBuilder\Tests\Unit\Config;
 
-use Asseco\JsonQueryBuilder\Config\RequestParametersConfig;
-use Asseco\JsonQueryBuilder\Tests\TestCase;
+use GioValentin\JsonQueryBuilder\Config\RequestParametersConfig;
+use GioValentin\JsonQueryBuilder\Tests\TestCase;
 use Exception;
 
 class RequestParametersConfigTest extends TestCase
@@ -23,7 +23,7 @@ class RequestParametersConfigTest extends TestCase
     {
         $this->expectException(Exception::class);
 
-        config(['asseco-json-query-builder' => []]);
+        config(['GioValentin-json-query-builder' => []]);
 
         new RequestParametersConfig();
     }

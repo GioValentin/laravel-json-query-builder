@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\RequestParameters;
+namespace GioValentin\JsonQueryBuilder\RequestParameters;
 
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class SoftDeletedParameter extends AbstractParameter

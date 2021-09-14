@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Types;
+namespace GioValentin\JsonQueryBuilder\Types;
 
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
 
 class BooleanType extends AbstractType
 {

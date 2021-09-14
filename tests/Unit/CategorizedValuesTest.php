@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Tests\Unit\Parsers;
+namespace GioValentin\JsonQueryBuilder\Tests\Unit\Parsers;
 
-use Asseco\JsonQueryBuilder\CategorizedValues;
-use Asseco\JsonQueryBuilder\SearchParser;
-use Asseco\JsonQueryBuilder\Tests\TestCase;
+use GioValentin\JsonQueryBuilder\CategorizedValues;
+use GioValentin\JsonQueryBuilder\SearchParser;
+use GioValentin\JsonQueryBuilder\Tests\TestCase;
 use Mockery;
 
 class CategorizedValuesTest extends TestCase

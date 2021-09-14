@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\SearchCallbacks;
+namespace GioValentin\JsonQueryBuilder\SearchCallbacks;
 
-use Asseco\JsonQueryBuilder\CategorizedValues;
-use Asseco\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
-use Asseco\JsonQueryBuilder\SearchParser;
-use Illuminate\Database\Eloquent\Builder;
+use GioValentin\JsonQueryBuilder\CategorizedValues;
+use GioValentin\JsonQueryBuilder\Exceptions\JsonQueryBuilderException;
+use GioValentin\JsonQueryBuilder\SearchParser;
+use Jenssegers\Mongodb\Eloquent\Builder;
 use Illuminate\Support\Str;
 
 abstract class AbstractCallback

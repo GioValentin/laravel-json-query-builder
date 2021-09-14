@@ -1,13 +1,14 @@
 {
-    "name": "asseco-voice/laravel-json-query-builder",
-    "description": "Laravel JSON query builder",
+    "name": "GioValentin/mongo-json-query-builder",
+    "description": "Mongo JSON query builder",
     "keywords": [
         "php",
-        "laravel"
+        "laravel",
+        "mongo"
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^7.3 || ^8.0",
         "laravel/framework": "^8.0"
     },
     "require-dev": {
@@ -18,18 +19,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Asseco\\JsonQueryBuilder\\": "src/"
+            "GioValentin\\JsonQueryBuilder\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Asseco\\JsonQueryBuilder\\Tests\\": "tests/"
+            "GioValentin\\JsonQueryBuilder\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Asseco\\JsonQueryBuilder\\JsonQueryServiceProvider"
+                "GioValentin\\JsonQueryBuilder\\JsonQueryServiceProvider"
             ]
         }
     }

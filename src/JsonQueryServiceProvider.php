@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder;
+namespace GioValentin\JsonQueryBuilder;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class JsonQueryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/asseco-json-query-builder.php', 'asseco-json-query-builder');
+        $this->mergeConfigFrom(__DIR__ . '/../config/GioValentin-json-query-builder.php', 'GioValentin-json-query-builder');
     }
 
     /**
@@ -21,6 +21,6 @@ class JsonQueryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([__DIR__ . '/../config/asseco-json-query-builder.php' => config_path('asseco-json-query-builder.php')]);
+        $this->publishes([__DIR__ . '/../config/GioValentin-json-query-builder.php' => config_path('GioValentin-json-query-builder.php')]);
     }
 }

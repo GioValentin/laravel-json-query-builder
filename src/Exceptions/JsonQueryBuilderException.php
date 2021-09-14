@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Asseco\JsonQueryBuilder\Exceptions;
+namespace GioValentin\JsonQueryBuilder\Exceptions;
 
 use Exception;
 use Throwable;
