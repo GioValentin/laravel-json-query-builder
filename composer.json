@@ -1,5 +1,5 @@
 {
-    "name": "GioValentin/mongo-json-query-builder",
+    "name": "giovalentin/mongo-json-query-builder",
     "description": "Mongo JSON query builder",
     "keywords": [
         "php",
