@@ -21,6 +21,21 @@ abstract class AbstractType
      */
     public function prepare(array $values): array
     {
+        foreach($values as $key => $value) 
+        {
+            $types = ['int', 'float', 'string'];
+
+            foreach($types as $_ => $type) {
+                $foo = $value;
+                $set = settype($foo, $type);
+                
+                if($set) {
+                    $values[$key] = $foo;
+                    break 1;
+                }   
+            }
+        }
+        
         return $values;
     }
 }
